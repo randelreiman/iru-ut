@@ -17,19 +17,15 @@
           "addressRegion": "Harjumaa",
           "addressCountry": "EE"
         },
-        "telephone": "+37212345678"
+        "telephone": "+37256664136"
       }
     </script>
     <link href="/src/styles.css" rel="stylesheet" />
   </head>
 
   <body data-page="home" class="bg-gray-50 text-gray-900">
-    <header class="bg-white shadow">
+    <header class="bg-gray-200 shadow">
       <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <!-- Logo -->
-        <!-- <a href="/" class="text-xl font-bold text-gray-900">
-          <img src="public/images/irut.jpg" alt="IruTehno">
-        </a> -->
         <a href="/" class="text-xl font-bold tracking-wide">
           <span class="text-blue-600">IRU</span>
           <span class="text-orange-500">TEHNO</span>
@@ -78,15 +74,6 @@
 
     <main>
       <section id="avaleht" class="relative bg-gray-900 text-white">
-        <!-- Background image -->
-        <!--  <div class="absolute inset-0">
-          <img
-            src="/images/garage.jpg"
-            alt="Ülevaatuspunkt Irus background"
-            class="w-full h-full object-cover opacity-40"
-          />
-        </div>
- -->
         <!-- Content -->
         <div class="relative max-w-4xl mx-auto px-6 py-24 text-center">
           <h1 class="text-3xl md:text-5xl font-bold leading-tight">
@@ -115,7 +102,7 @@
           <p class="mt-6 text-sm text-gray-300">✔ Usaldusväärne ✔ Kiire töö ✔ Head hinnad</p>
         </div>
       </section>
-      <section id="teenused" class="bg-gray-50 py-16">
+      <section id="teenused" class="bg-gray-200 py-16">
         <div class="max-w-6xl mx-auto px-6">
           <!-- Section header -->
           <div class="text-center max-w-2xl mx-auto">
@@ -146,9 +133,7 @@
             <!-- Service 3 -->
             <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
               <h3 class="font-semibold text-lg text-gray-900">Kordusülevaatus</h3>
-              <p class="mt-2 text-gray-600 text-sm">
-                Kiire korduskontroll pärast vigade parandamist.
-              </p>
+              <p class="mt-2 text-gray-600 text-sm">10 päeva jooksul tasuta kordusülevaatu</p>
             </div>
 
             <!-- Service 4 -->
@@ -169,6 +154,67 @@
           </div>
         </div>
       </section>
+      <section id="hinnad" class="bg-gray-900 py-16">
+        <div class="max-w-6xl mx-auto px-6">
+          <!-- Header -->
+          <div class="text-center max-w-2xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-900">Hinnakiri</h2>
+            <p class="mt-4 text-gray-600">Kõik hinnad sisaldavad käibemaksu.</p>
+          </div>
+
+          <!-- Grid -->
+          <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- Card -->
+            <div class="bg-gray-50 p-6 rounded-xl shadow">
+              <h3 class="font-semibold text-lg">Mopeedauto</h3>
+              <p class="text-sm text-gray-500">L6</p>
+              <p class="mt-3 text-2xl font-bold text-blue-600">55€</p>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-xl shadow">
+              <h3 class="font-semibold text-lg">Mootorratas</h3>
+              <p class="text-sm text-gray-500">L</p>
+              <p class="mt-3 text-2xl font-bold text-blue-600">35€</p>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-xl shadow">
+              <h3 class="font-semibold text-lg">Sõiduauto</h3>
+              <p class="text-sm text-gray-500">M1</p>
+              <p class="mt-3 text-2xl font-bold text-blue-600">55€</p>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-xl shadow">
+              <h3 class="font-semibold text-lg">Veoauto / kaubik</h3>
+              <p class="text-sm text-gray-500">N1</p>
+              <p class="mt-3 text-2xl font-bold text-blue-600">65€</p>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-xl shadow">
+              <h3 class="font-semibold text-lg">Haagis</h3>
+              <p class="text-sm text-gray-500">O1, O2</p>
+              <p class="mt-3 text-2xl font-bold text-blue-600">30€</p>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-xl shadow">
+              <h3 class="font-semibold text-lg">Traktor</h3>
+              <p class="text-sm text-gray-500">TR, LM</p>
+              <p class="mt-3 text-2xl font-bold text-blue-600">40€</p>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-xl shadow">
+              <h3 class="font-semibold text-lg">Traktori haagis</h3>
+              <p class="text-sm text-gray-500">R, TH</p>
+              <p class="mt-3 text-2xl font-bold text-blue-600">35€</p>
+            </div>
+          </div>
+
+          <!-- Notes -->
+          <div class="mt-12 max-w-2xl mx-auto text-sm text-gray-600 space-y-2">
+            <p>• Takso, eksami-, õppe- ja alarmsõiduki ülevaatus: 20 €</p>
+            <p>• Kordusülevaatus 10 kalendripäeva tasuta, hiljem 15 €</p>
+          </div>
+        </div>
+      </section>
       <section id="kontakt" class="bg-white py-16">
         <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
           <!-- LEFT: CONTACT INFO -->
@@ -176,7 +222,7 @@
             <h2 class="text-3xl font-bold text-gray-900">Kontakt</h2>
 
             <p class="mt-4 text-gray-600">
-              Tule meie ülevaatuspunkti Irus – kiire teenindus ilma järjekorrata.
+              Tule meie ülevaatuspunkti Irus - kiire teenindus ilma järjekorrata.
             </p>
 
             <!-- Address -->
@@ -188,16 +234,17 @@
             <!-- Phone -->
             <div class="mt-4">
               <p class="font-semibold text-gray-900">Telefon</p>
-              <a href="tel:+37212345678" class="text-blue-600 font-medium hover:underline">
-                +372 1234 5678
+              <a href="tel:+37256664136" class="text-blue-600 font-medium hover:underline">
+                +372 5666 4136
               </a>
             </div>
 
             <!-- Hours -->
             <div class="mt-4">
               <p class="font-semibold text-gray-900">Lahtiolekuajad</p>
-              <p class="text-gray-700">E–R: 08:00 – 17:00</p>
-              <p class="text-gray-700">L–P: Suletud</p>
+              <p class="text-gray-700">E-R: 10:00 - 20:00</p>
+              <p class="text-gray-700">L: 10:00 - 15:00</p>
+              <p class="text-gray-700">P: Suletud</p>
             </div>
 
             <!-- Trust badges -->
@@ -229,27 +276,29 @@
 
           <p class="mt-4 text-sm leading-relaxed">
             Saha-Loo tee 36<br />
-            Iru küla, 74206 Jõelähtme vald, Harju maakond<br />
+            Iru küla, Jõelähtme vald, Harju maakond<br />
             Harjumaa, Eesti
           </p>
 
           <p class="mt-3">
             Telefon:
-            <a href="tel:+37212345678" class="text-blue-400 hover:underline"> +372 1234 5678 </a>
+            <a href="tel:+37256664136" class="text-blue-400 hover:underline"> +372 5666 4136 </a>
           </p>
 
           <p class="mt-2">
             Email:
-            <a href="mailto:info@irutehno.ee" class="hover:underline"> info@irutehno.ee </a>
+            <a href="mailto:iruylevaatus@gmail.com" class="hover:underline">
+              iruylevaatus@gmail.com
+            </a>
           </p>
         </div>
 
         <!-- Opening hours -->
         <div>
           <h3 class="text-white text-lg font-semibold">Lahtiolekuajad</h3>
-
-          <p class="mt-4 text-sm">E–R: 08:00 – 17:00</p>
-          <p class="text-sm">L–P: Suletud</p>
+          <p class="mt-4 text-sm">E-R: 10:00 - 20:00</p>
+          <p class="text-sm">L: 10:00 - 15:00</p>
+          <p class="text-sm">P: Suletud</p>
         </div>
 
         <!-- Navigation -->
@@ -266,11 +315,6 @@
             </li>
           </ul>
         </div>
-      </div>
-
-      <!-- Bottom bar -->
-      <div class="border-t border-gray-800 text-center text-sm py-4">
-        © 2026 Iru Tehnoülevaatus. Kõik õigused kaitstud.
       </div>
     </footer>
     <button
