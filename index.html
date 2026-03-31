@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ülevaatuspunkt Tallinna lähistel Irus | Iru Tehnoülevaatus</title>
+    <title>Iru Tehno</title>
     <meta name="description" content="Usaldusväärne tehnoülevaatus Irus." />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "AutoRepair",
+        "@type": "VehicleInspectionService",
         "name": "Iru Tehnoülevaatus",
         "address": {
           "@type": "PostalAddress",
@@ -73,9 +73,9 @@
     </header>
 
     <main>
-      <section id="avaleht" class="relative bg-gray-900 text-white">
+      <section id="avaleht" class="relative bg-gray-900 py-16 text-white">
         <!-- Content -->
-        <div class="relative max-w-4xl mx-auto px-6 py-24 text-center">
+        <div class="relative max-w-6xl mx-auto px-6 text-center">
           <h1 class="text-3xl md:text-5xl font-bold leading-tight">
             Usaldusväärne ülevaatuspunkt Irus
           </h1>
@@ -133,7 +133,7 @@
             <!-- Service 3 -->
             <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
               <h3 class="font-semibold text-lg text-gray-900">Kordusülevaatus</h3>
-              <p class="mt-2 text-gray-600 text-sm">10 päeva jooksul tasuta kordusülevaatu</p>
+              <p class="mt-2 text-gray-600 text-sm">10 päeva jooksul tasuta</p>
             </div>
 
             <!-- Service 4 -->
@@ -158,7 +158,7 @@
         <div class="max-w-6xl mx-auto px-6">
           <!-- Header -->
           <div class="text-center max-w-2xl mx-auto">
-            <h2 class="text-3xl font-bold text-gray-900">Hinnakiri</h2>
+            <h2 class="text-3xl font-bold text-gray-100">Hinnakiri</h2>
             <p class="mt-4 text-gray-600">Kõik hinnad sisaldavad käibemaksu.</p>
           </div>
 
@@ -177,7 +177,7 @@
               <p class="mt-3 text-2xl font-bold text-blue-600">35€</p>
             </div>
 
-            <div class="bg-gray-50 p-6 rounded-xl shadow">
+            <div class="bg-gray-50 p-6 rounded-xl shadow border-2 border-blue-600">
               <h3 class="font-semibold text-lg">Sõiduauto</h3>
               <p class="text-sm text-gray-500">M1</p>
               <p class="mt-3 text-2xl font-bold text-blue-600">55€</p>
@@ -207,6 +207,30 @@
               <p class="mt-3 text-2xl font-bold text-blue-600">35€</p>
             </div>
           </div>
+          <div class="mt-12 max-w-2xl mx-auto space-y-6 text-gray-700">
+            <!-- Important notice -->
+            <div class="bg-yellow-50 border border-yellow-200 p-4 rounded-lg text-center">
+              <p class="text-xl font-bold text-blue-600">
+                Teenindame elavas järjekorras - broneerimine puudub!
+              </p>
+            </div>
+
+            <!-- Extra services -->
+            <div>
+              <h3 class="font-semibold text-gray-900 mb-2">Lisateenused</h3>
+              <ul class="space-y-1 text-sm">
+                <li>Tulekustuti kontroll: 8 €</li>
+                <li>Pensionäridele (M1) ühe tulekustuti kontroll tasuta</li>
+                <li>Piduritest, heitgaaside kontroll, lõtkukontroll: 15 €</li>
+                <li>Tulede kontroll: tasuta</li>
+              </ul>
+            </div>
+
+            <!-- Coming soon -->
+            <div class="text-sm text-gray-600">
+              <p>Peagi lisandub võimalus kontrollida mootorrataste pidureid ka stendis.</p>
+            </div>
+          </div>
 
           <!-- Notes -->
           <div class="mt-12 max-w-2xl mx-auto text-sm text-gray-600 space-y-2">
@@ -225,13 +249,11 @@
               Tule meie ülevaatuspunkti Irus - kiire teenindus ilma järjekorrata.
             </p>
 
-            <!-- Address -->
             <div class="mt-6">
               <p class="font-semibold text-gray-900">Aadress</p>
               <p class="text-gray-700">Saha-Loo tee 36, Iru küla, Jõelähtme vald, Harju maakond</p>
             </div>
 
-            <!-- Phone -->
             <div class="mt-4">
               <p class="font-semibold text-gray-900">Telefon</p>
               <a href="tel:+37256664136" class="text-blue-600 font-medium hover:underline">
@@ -239,7 +261,6 @@
               </a>
             </div>
 
-            <!-- Hours -->
             <div class="mt-4">
               <p class="font-semibold text-gray-900">Lahtiolekuajad</p>
               <p class="text-gray-700">E-R: 10:00 - 20:00</p>
@@ -247,7 +268,6 @@
               <p class="text-gray-700">P: Suletud</p>
             </div>
 
-            <!-- Trust badges -->
             <div class="mt-6 text-sm text-gray-600 space-y-1">
               <p>✔ Kiire teenindus</p>
               <p>✔ Sõiduautod</p>
@@ -255,15 +275,34 @@
             </div>
           </div>
 
-          <!-- RIGHT: MAP -->
-          <div class="w-full h-[400px] rounded-xl overflow-hidden shadow">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2027.4051527640001!2d24.911908496159523!3d59.45967003529391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692ed07a773eb2d%3A0xb8d801a54f3ade8a!2sSaha-Loo%20tee%2036%2C%20Iru%2C%2074206%20Harju%20maakond!5e0!3m2!1set!2see!4v1774199570689!5m2!1set!2see"
-              class="w-full h-full border-0"
+          <!-- RIGHT: IMAGE + MAP -->
+          <div class="space-y-6">
+            <!-- Image -->
+            <img
+              src="/images/irut.jpg"
+              alt="Iru Tehnoülevaatus hoone"
+              class="w-full h-[300px] object-cover rounded-xl"
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+            />
+
+            <!-- Map -->
+            <div class="w-full h-[280px] rounded-xl overflow-hidden shadow">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2027.4051527640001!2d24.911908496159523!3d59.45967003529391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692ed07a773eb2d%3A0xb8d801a54f3ade8a!2sSaha-Loo%20tee%2036%2C%20Iru%2C%2074206%20Harju%20maakond!5e0!3m2!1set!2see!4v1774199570689!5m2!1set!2see"
+                class="w-full h-full border-0"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
+            <!-- Maps button -->
+            <a
+              href="https://maps.google.com/?q=Saha-Loo+tee+36+Iru"
+              target="_blank"
+              class="block text-center bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
             >
-            </iframe>
+              Ava Google Mapsis →
+            </a>
           </div>
         </div>
       </section>
@@ -272,19 +311,17 @@
       <div class="max-w-6xl mx-auto px-6 py-12 grid gap-10 md:grid-cols-3">
         <!-- Business info (NAP for SEO) -->
         <div>
-          <h3 class="text-white text-lg font-semibold">Iru Tehnoülevaatus</h3>
+          <a href="/" class="text-xl font-bold tracking-wide">
+            <span class="text-blue-600">IRU</span>
+            <span class="text-orange-500">TEHNO</span>
+          </a>
 
           <p class="mt-4 text-sm leading-relaxed">
             Saha-Loo tee 36<br />
             Iru küla, Jõelähtme vald, Harju maakond<br />
-            Harjumaa, Eesti
+            Harjumaa, Eesti<br />
+            Telefon: +372 5666 4136
           </p>
-
-          <p class="mt-3">
-            Telefon:
-            <a href="tel:+37256664136" class="text-blue-400 hover:underline"> +372 5666 4136 </a>
-          </p>
-
           <p class="mt-2">
             Email:
             <a href="mailto:iruylevaatus@gmail.com" class="hover:underline">
@@ -306,12 +343,12 @@
           <h3 class="text-white text-lg font-semibold">Kiirlingid</h3>
 
           <ul class="mt-4 space-y-2 text-sm">
-            <li><a href="/" class="hover:text-white">Avaleht</a></li>
+            <li><a href="/#avaleht" class="hover:text-white">Avaleht</a></li>
             <li>
-              <a href="/services.html" class="hover:text-white">Teenused</a>
+              <a href="/#teenused" class="hover:text-white">Teenused</a>
             </li>
             <li>
-              <a href="/contact.html" class="hover:text-white">Kontakt</a>
+              <a href="/#kontakt" class="hover:text-white">Kontakt</a>
             </li>
           </ul>
         </div>
