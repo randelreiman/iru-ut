@@ -9,7 +9,7 @@
       {
         "@context": "https://schema.org",
         "@type": "VehicleInspectionService",
-        "name": "Iru Tehnoülevaatus",
+        "name": "Iru Tehno",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Iru küla",
@@ -23,8 +23,8 @@
     <link href="/src/styles.css" rel="stylesheet" />
   </head>
 
-  <body data-page="home" class="bg-gray-50 text-gray-900">
-    <header class="bg-gray-200 shadow">
+  <body data-page="home" class="text-gray-900">
+    <header class="bg-stone-200 shadow-md sticky top-0 z-50">
       <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="/" class="text-xl font-bold tracking-wide">
           <span class="text-blue-600">IRU</span>
@@ -76,13 +76,9 @@
       <section id="avaleht" class="relative bg-gray-900 py-16 text-white">
         <!-- Content -->
         <div class="relative max-w-6xl mx-auto px-6 text-center">
-          <h1 class="text-3xl md:text-5xl font-bold leading-tight">
-            Usaldusväärne ülevaatuspunkt Irus
-          </h1>
+          <h1 class="text-3xl md:text-5xl font-bold leading-tight">Ülevaatuspunkt Irus</h1>
 
-          <p class="mt-6 text-lg md:text-xl text-gray-200">
-            Kiire ja professionaalne ülevaatuspunkt Tallinna lähistel
-          </p>
+          <p class="mt-6 text-lg md:text-xl text-gray-200">Ülevaatuspunkt Tallinna lähistel</p>
 
           <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
             <a
@@ -94,18 +90,17 @@
 
             <a
               href="/#hinnakiri"
-              class="bg-white text-gray-900 hover:bg-gray-200 px-6 py-3 rounded-lg font-semibold transition"
+              class="bg-stone-200 text-gray-900 hover:bg-gray-200 px-6 py-3 rounded-lg font-semibold transition"
             >
-              🔧 Vaata hinnakirja
+              Vaata hinnakirja
             </a>
           </div>
         </div>
       </section>
-      <section class="bg-gray-100 py-12">
+      <section class="bg-stone-200 py-12">
         <div class="max-w-4xl mx-auto text-center space-y-3 text-gray-700">
-          <p>✔ Kiire teenindus ilma järjekorrata</p>
-          <p>✔ Mugav asukoht Tallinna lähedal</p>
-          <p>✔ Ausad hinnad ja läbipaistev teenus</p>
+          <p>✔ Kiire teenindus elava järjekorraga</p>
+          <p>✔ Aprillis kõikidelt ülevaatus hindadelt soodustus 10€</p>
         </div>
       </section>
       <section id="hinnakiri" class="bg-gray-900 py-16">
@@ -119,45 +114,57 @@
           <!-- Grid -->
           <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <!-- Card -->
-            <div class="bg-gray-50 p-6 rounded-xl shadow">
-              <h3 class="font-semibold text-lg">Mopeedauto</h3>
-              <p class="text-sm text-gray-500">L6</p>
+            <div class="bg-stone-200 p-6 rounded-xl shadow border-2 border-blue-600">
+              <h3 class="font-semibold text-lg">
+                Sõiduauto
+                <p class="text-sm text-gray-500">M1</p>
+              </h3>
+
               <p class="mt-3 text-2xl font-bold text-blue-600">55€</p>
             </div>
-
-            <div class="bg-gray-50 p-6 rounded-xl shadow">
-              <h3 class="font-semibold text-lg">Mootorratas</h3>
-              <p class="text-sm text-gray-500">L</p>
+            <div class="bg-stone-200 p-6 rounded-xl shadow">
+              <h3 class="font-semibold text-lg">
+                Mootorratas
+                <p class="text-sm text-gray-500">L</p>
+              </h3>
               <p class="mt-3 text-2xl font-bold text-blue-600">35€</p>
             </div>
-
-            <div class="bg-gray-50 p-6 rounded-xl shadow border-2 border-blue-600">
-              <h3 class="font-semibold text-lg">Sõiduauto</h3>
-              <p class="text-sm text-gray-500">M1</p>
+            <div class="bg-stone-200 p-6 rounded-xl shadow">
+              <h3 class="font-semibold text-lg">
+                Veoauto / kaubik
+                <p class="text-sm text-gray-500">N1</p>
+              </h3>
+              <p class="mt-3 text-2xl font-bold text-blue-600">65€</p>
+            </div>
+            <div class="bg-stone-200 p-6 rounded-xl shadow">
+              <h3 class="font-semibold text-lg">
+                Mopeedauto
+                <p class="text-sm text-gray-500">L6</p>
+              </h3>
               <p class="mt-3 text-2xl font-bold text-blue-600">55€</p>
             </div>
 
-            <div class="bg-gray-50 p-6 rounded-xl shadow">
-              <h3 class="font-semibold text-lg">Veoauto / kaubik</h3>
-              <p class="text-sm text-gray-500">N1</p>
-              <p class="mt-3 text-2xl font-bold text-blue-600">65€</p>
-            </div>
-
-            <div class="bg-gray-50 p-6 rounded-xl shadow">
-              <h3 class="font-semibold text-lg">Haagis</h3>
-              <p class="text-sm text-gray-500">O1, O2</p>
+            <div class="bg-stone-200 p-6 rounded-xl shadow">
+              <h3 class="font-semibold text-lg">
+                Haagis
+                <p class="text-sm text-gray-500">O1, O2</p>
+              </h3>
               <p class="mt-3 text-2xl font-bold text-blue-600">30€</p>
             </div>
 
-            <div class="bg-gray-50 p-6 rounded-xl shadow">
-              <h3 class="font-semibold text-lg">Traktor</h3>
-              <p class="text-sm text-gray-500">TR, LM</p>
+            <div class="bg-stone-200 p-6 rounded-xl shadow">
+              <h3 class="font-semibold text-lg">
+                Traktor
+                <p class="text-sm text-gray-500">TR, LM</p>
+              </h3>
               <p class="mt-3 text-2xl font-bold text-blue-600">40€</p>
             </div>
 
-            <div class="bg-gray-50 p-6 rounded-xl shadow">
-              <h3 class="font-semibold text-lg">Traktori haagis</h3>
-              <p class="text-sm text-gray-500">R, TH</p>
+            <div class="bg-stone-200 p-6 rounded-xl shadow">
+              <h3 class="font-semibold text-lg">
+                Traktori haagis
+                <p class="text-sm text-gray-500">R, TH</p>
+              </h3>
               <p class="mt-3 text-2xl font-bold text-blue-600">35€</p>
             </div>
           </div>
@@ -171,8 +178,8 @@
 
             <!-- Extra services -->
             <div>
-              <h3 class="font-semibold text-gray-900 mb-2">Lisateenused</h3>
-              <ul class="space-y-1 text-sm">
+              <h3 class="font-semibold text-blue-600 mb-2">Lisateenused</h3>
+              <ul class="space-y-1 text-xl font-semibold text-gray-700 list-disc list-inside">
                 <li>Tulekustuti kontroll: 8 €</li>
                 <li>Pensionäridele (M1) ühe tulekustuti kontroll tasuta</li>
                 <li>Piduritest, heitgaaside kontroll, lõtkukontroll: 15 €</li>
@@ -193,7 +200,7 @@
           </div>
         </div>
       </section>
-      <section id="kontakt" class="bg-white py-16">
+      <section id="kontakt" class="bg-stone-300 py-16">
         <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
           <!-- LEFT: CONTACT INFO -->
           <div>
@@ -221,12 +228,6 @@
               <p class="text-gray-700">L: 10:00 - 15:00</p>
               <p class="text-gray-700">P: Suletud</p>
             </div>
-
-            <div class="mt-6 text-sm text-gray-600 space-y-1">
-              <p>✔ Kiire teenindus</p>
-              <p>✔ Sõiduautod</p>
-              <p>✔ Kaardimakse võimalus</p>
-            </div>
           </div>
 
           <!-- RIGHT: IMAGE + MAP -->
@@ -234,8 +235,8 @@
             <!-- Image -->
             <img
               src="/images/irut.jpg"
-              alt="Iru Tehnoülevaatus hoone"
-              class="w-full h-[300px] object-cover rounded-xl"
+              alt="Iru Tehno hoone"
+              class="w-full h-[280px] object-cover rounded-xl shadow"
               loading="lazy"
             />
 
@@ -274,7 +275,10 @@
             Saha-Loo tee 36<br />
             Iru küla, Jõelähtme vald, Harju maakond<br />
             Harjumaa, Eesti<br />
-            Telefon: +372 5666 4136
+            Telefon:
+            <a href="tel:+37256664136" class="text-blue-600 font-semibold text-lg hover:underline">
+              +372 5666 4136
+            </a>
           </p>
           <p class="mt-2">
             Email:
@@ -314,5 +318,11 @@
     >
       ↑
     </button>
+    <a
+      href="tel:+37256664136"
+      class="fixed bottom-4 left-4 right-4 bg-blue-600 text-white text-center py-3 rounded-xl font-semibold shadow-lg md:hidden z-50"
+    >
+      📞 Helista kohe
+    </a>
   </body>
 </html>
