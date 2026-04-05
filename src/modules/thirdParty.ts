@@ -5,7 +5,7 @@ export function initThirdParty() {
 
 /* ---------------- COOKIEYES ---------------- */
 function loadCookieYes() {
-  if (import.meta.env.VITE_ENABLE_COOKIES !== 'true') return
+  if (import.meta.env.VITE_ENABLE_COOKIES === 'false') return
   if (document.getElementById('cookieyes')) return
 
   const script = document.createElement('script')
@@ -18,7 +18,7 @@ function loadCookieYes() {
 
 /* ---------------- GTM ---------------- */
 function loadGTM() {
-  if (import.meta.env.VITE_ENABLE_GTM !== 'true') return
+  if (import.meta.env.VITE_ENABLE_GTM === 'false') return
   if (document.getElementById('gtm-script')) return
 
   const gtmId = 'GTM-WRFVFK5G'
