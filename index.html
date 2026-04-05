@@ -1,27 +1,6 @@
 <!doctype html>
 <html lang="et" class="scroll-smooth">
   <head>
-    <!-- Google Tag Manager -->
-    <script>
-      ;(function (w, d, s, l, i) {
-        w[l] = w[l] || []
-        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != 'dataLayer' ? '&l=' + l : ''
-        j.async = true
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
-        f.parentNode.insertBefore(j, f)
-      })(window, document, 'script', 'dataLayer', 'GTM-WRFVFK5G')
-    </script>
-    <!-- End Google Tag Manager -->
-    <!-- Start cookieyes banner -->
-    <script
-      id="cookieyes"
-      type="text/javascript"
-      src="https://cdn-cookieyes.com/client_data/150523df78fc63d58a930192e7fa50e9/script.js"
-    ></script>
-    <!-- End cookieyes banner -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tehnoülevaatus Tallinna lähistel Irus - Irutehno</title>
@@ -31,6 +10,7 @@
       name="description"
       content="Tehnoülevaatus Tallinna lähistel Irus - Irutehno. Kiire teenindus elava järjekorraga."
     />
+    <script type="module" src="/src/main.ts"></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -275,46 +255,37 @@
       </section>
       <section id="kontakt" class="bg-stone-300 py-16">
         <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
-          <!-- LEFT: CONTACT INFO -->
-          <div>
-            <h2 class="text-3xl font-bold text-gray-900">Kontakt</h2>
+          <!-- LEFT: CONTACT INFO + MAP -->
+          <div class="space-y-6">
+            <div>
+              <h2 class="text-3xl font-bold text-gray-900">Kontakt</h2>
 
-            <p class="mt-4 text-gray-600">
-              Tule meie ülevaatuspunkti Irus - kiire teenindus ilma järjekorrata.
-            </p>
+              <p class="mt-4 text-gray-600">
+                Tule meie ülevaatuspunkti Irus - kiire teenindus ilma järjekorrata.
+              </p>
+            </div>
 
-            <div class="mt-6">
+            <div>
               <p class="font-semibold text-gray-900">Aadress</p>
               <p class="text-gray-700">Saha-Loo tee 36, Iru küla, Jõelähtme vald, Harju maakond</p>
             </div>
 
-            <div class="mt-4">
+            <div>
               <p class="font-semibold text-gray-900">Telefon</p>
               <a href="tel:+37256664136" class="text-blue-600 font-medium hover:underline">
                 +372 5666 4136
               </a>
             </div>
 
-            <div class="mt-4">
+            <div>
               <p class="font-semibold text-gray-900">Lahtiolekuajad</p>
               <p class="text-gray-700">E-R: 10:00 - 20:00</p>
               <p class="text-gray-700">L: 10:00 - 15:00</p>
               <p class="text-gray-700">P: Suletud</p>
             </div>
-          </div>
-
-          <!-- RIGHT: IMAGE + MAP -->
-          <div class="space-y-6">
-            <!-- Image -->
-            <img
-              src="/images/irut.jpg"
-              alt="Irutehno tehnoülevaatuspunkt"
-              class="w-full h-[280px] object-cover rounded-xl shadow"
-              loading="lazy"
-            />
 
             <!-- Map -->
-            <div class="w-full h-[280px] rounded-xl overflow-hidden shadow">
+            <div class="w-full h-[260px] rounded-xl overflow-hidden shadow">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2027.4051527641086!2d24.911908499386232!3d59.459670035292184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692ed30cae79c51%3A0xc110d348072230fa!2sIrutehno%20O%C3%9C!5e0!3m2!1sen!2see!4v1775411639440!5m2!1sen!2see"
                 class="w-full h-full border-0"
@@ -327,10 +298,36 @@
             <a
               href="https://maps.app.goo.gl/yXKagsbFub4Sn4oq9"
               target="_blank"
-              class="block text-center bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+              class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
             >
               Ava Google Mapsis →
             </a>
+          </div>
+
+          <div class="relative">
+            <!-- Images -->
+            <div id="slider" class="overflow-hidden rounded-xl shadow-lg">
+              <div class="flex transition-transform duration-300" id="slides">
+                <img src="/images/tehnoulevaatus_iru.webp" class="w-full flex-shrink-0" />
+                <img src="/images/tehnoulevaatus_ruumid.webp" class="w-full flex-shrink-0" />
+              </div>
+            </div>
+
+            <!-- Left arrow -->
+            <button
+              id="prevBtn"
+              class="absolute top-1/2 left-2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full"
+            >
+              ←
+            </button>
+
+            <!-- Right arrow -->
+            <button
+              id="nextBtn"
+              class="absolute top-1/2 right-2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full"
+            >
+              →
+            </button>
           </div>
         </div>
       </section>
