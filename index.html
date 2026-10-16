@@ -85,55 +85,7 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <header class="bg-stone-200 shadow-md sticky top-0 z-50">
-      <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="/" class="text-xl font-bold tracking-wide">
-          <span class="sr-only">Irutehno</span>
-          <span aria-hidden="true">
-            <span class="text-blue-600">IRU</span><span class="text-orange-500">TEHNO</span>
-          </span>
-        </a>
-
-        <!-- Desktop Menu -->
-        <ul class="hidden md:flex space-x-8 font-medium">
-          <li><a href="/#avaleht" class="hover:text-blue-600">Avaleht</a></li>
-          <li>
-            <a href="/#hinnakiri" class="hover:text-blue-600">Hinnakiri</a>
-          </li>
-          <li>
-            <a href="/#kontakt" class="hover:text-blue-600">Kontakt</a>
-          </li>
-        </ul>
-        <!-- Mobile Button -->
-        <button
-          id="menu-btn"
-          class="md:hidden flex items-center"
-          aria-label="Open menu"
-          aria-expanded="false"
-        >
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-        </button>
-      </nav>
-
-      <!-- Mobile Menu -->
-      <div
-        id="mobile-menu"
-        class="overflow-hidden transition-all ease-in-out duration-300 md:hidden px-6"
-      >
-        <ul class="font-medium">
-          <li><a href="/#avaleht" class="block py-3">Avaleht</a></li>
-          <li><a href="/#hinnakiri" class="block py-3">Hinnakiri</a></li>
-          <li><a href="/#kontakt" class="block py-3">Kontakt</a></li>
-        </ul>
-      </div>
-    </header>
+    {{> header }}
 
     <main>
       <section id="avaleht" class="relative bg-gray-900 py-16 text-white">
@@ -360,58 +312,7 @@
         </div>
       </section>
     </main>
-    <footer class="bg-gray-900 text-gray-300">
-      <div class="max-w-6xl mx-auto px-6 py-12 grid gap-10 md:grid-cols-3">
-        <!-- Business info (NAP for SEO) -->
-        <div>
-          <a href="/" class="text-xl font-bold tracking-wide">
-            <span class="sr-only">Irutehno</span>
-            <span aria-hidden="true">
-              <span class="text-blue-600">IRU</span><span class="text-orange-500">TEHNO</span>
-            </span>
-          </a>
-
-          <p class="mt-4 text-sm leading-relaxed">
-            Saha-Loo tee 36<br />
-            Iru küla, Jõelähtme vald, Harju maakond<br />
-            Harjumaa, Eesti<br />
-            Telefon:
-            <a href="tel:+37256664136" class="text-blue-600 font-semibold text-lg hover:underline">
-              +372 5666 4136
-            </a>
-          </p>
-          <p class="mt-2">
-            Email:
-            <a href="mailto:iruylevaatus@gmail.com" class="hover:underline">
-              iruylevaatus@gmail.com
-            </a>
-          </p>
-        </div>
-
-        <!-- Opening hours -->
-        <div>
-          <h3 class="text-white text-lg font-semibold">Lahtiolekuajad</h3>
-          <p class="mt-4 text-sm">E-R: 10:00 - 20:00</p>
-          <p class="text-sm">L: 10:00 - 15:00</p>
-          <p class="text-sm">P: Suletud</p>
-        </div>
-
-        <!-- Navigation -->
-        <div>
-          <h3 class="text-white text-lg font-semibold">Kiirlingid</h3>
-
-          <ul class="mt-4 space-y-2 text-sm">
-            <li><a href="/#avaleht" class="hover:text-white">Avaleht</a></li>
-            <li>
-              <a href="/#hinnakiri" class="hover:text-white">Hinnakiri</a>
-            </li>
-            <li>
-              <a href="/#kontakt" class="hover:text-white">Kontakt</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+    {{> footer }}
     <a
       href="tel:+37256664136"
       class="fixed bottom-4 left-4 right-4 bg-blue-600 text-white text-center py-3 rounded-xl font-semibold shadow-lg md:hidden z-50"

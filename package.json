@@ -14,12 +14,15 @@
   "devDependencies": {
     "@cloudflare/vite-plugin": "^1.30.0",
     "@cloudflare/workers-types": "^4.20260317.1",
+    "@types/node": "^26.6.5",
     "prettier": "^3.8.1",
     "typescript": "~5.9.3",
     "vite": "^7.3.1",
+    "vite-plugin-handlebars": "^2.0.3",
     "wrangler": "^4.76.0"
   },
   "dependencies": {
+    "@poliklot/prettier-plugin-handlebars": "^0.4.1",
     "@tailwindcss/vite": "^4.2.1",
     "latest": "^0.2.0",
     "tailwindcss": "^4.2.1"

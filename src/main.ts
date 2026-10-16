@@ -1,5 +1,4 @@
 import './styles.css'
-
 import { initMobileMenu } from './modules/mobileMenu.ts'
 import { initSectionObserver } from './modules/sectionObserver.ts'
 import { initSlider } from './modules/slider.ts'
